@@ -4,6 +4,8 @@ MobileNetV2 is a convolutional neural network architecture that seeks to perform
 
 MobileNetV2 is already trained on many images with 1000+ classes. We can use this trained model according to our needs.
 
+![Alpaca](/images/alpaca.png)
+
 We want to classify images of Alpaca. We can load MobileNet model without its top layers which gives output probabilities of 1000 classes and put our own dense layer with one unit and use binary crossentropy for training.
 
-The training images are preprocessed randomly every time by flipping or rotating and then passing to MobileNet model. We can further fine tune this model by training later layers. 
+The training images are preprocessed randomly every time by flipping or rotating and then passing to MobileNet model. This is called data augmentation. We can further fine tune this model by training later layers. 
